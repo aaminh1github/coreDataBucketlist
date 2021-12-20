@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreData
 
 protocol AddItemViewControllerDelegate: AnyObject{
     func itemSaved(by controller: AddViewController, with text: String, at indexPath: NSIndexPath?)

@@ -38,7 +38,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="Wah-dC-ATo" kind="showDetail" identifier="DetalisID" id="mTt-kf-faX"/>
+                        <segue destination="KdR-fQ-jrh" kind="presentation" identifier="DetalisID" id="7fK-Ks-jkf"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xvZ-XJ-H0h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -143,7 +143,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mTt-kf-faX"/>
+        <segue reference="Zft-oF-Dc0"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

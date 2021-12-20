@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF75A7E02770159600048C1A /* Bucket List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF75A7DE2770159600048C1A /* Bucket List.xcdatamodeld */; };
 		BF7D844E276BFEFD0011B62D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D844D276BFEFD0011B62D /* AppDelegate.swift */; };
 		BF7D8450276BFEFD0011B62D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7D844F276BFEFD0011B62D /* SceneDelegate.swift */; };
 		BF7D8455276BFEFD0011B62D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7D8453276BFEFD0011B62D /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF75A7DF2770159600048C1A /* Bucket List.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Bucket List.xcdatamodel"; sourceTree = "<group>"; };
 		BF7D844A276BFEFD0011B62D /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7D844D276BFEFD0011B62D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF7D844F276BFEFD0011B62D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				BF7D8461276BFFFD0011B62D /* TableViewController.swift */,
 				BF7D8483276D8C910011B62D /* AddViewController.swift */,
 				BF7D8485276DFD360011B62D /* Add.swift */,
+				BF75A7DE2770159600048C1A /* Bucket List.xcdatamodeld */,
 			);
 			path = BucketList;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF75A7E02770159600048C1A /* Bucket List.xcdatamodeld in Sources */,
 				BF7D844E276BFEFD0011B62D /* AppDelegate.swift in Sources */,
 				BF7D8450276BFEFD0011B62D /* SceneDelegate.swift in Sources */,
 				BF7D8484276D8C910011B62D /* AddViewController.swift in Sources */,
@@ -366,6 +370,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BF75A7DE2770159600048C1A /* Bucket List.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BF75A7DF2770159600048C1A /* Bucket List.xcdatamodel */,
+			);
+			currentVersion = BF75A7DF2770159600048C1A /* Bucket List.xcdatamodel */;
+			path = "Bucket List.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BF7D8442276BFEFD0011B62D /* Project object */;
 }

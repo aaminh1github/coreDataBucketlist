@@ -6,16 +6,28 @@
 //
 
 import UIKit
+import CoreData
 
 class TableViewController: UITableViewController , AddItemViewControllerDelegate {
-//    func cancelButtonPressed(by controller: UIViewController) {
-//        <#code#>
-//    }
-    
+  
+    let managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    let thing = NSEntityDescription.insertNewObject(forEntityName: "BucketListItems", into: managedObjectContext) as! BucketListItems
    
-var items = [ "n","d","d","cs","f"]
+var items = [BucketListItems]()
     
+    thing.coolTextAttribute = "BucketListItems"
 
+    func fetchAllItems(){
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "BucketListItem")
+        
+        do{
+            let result = try manageObjectContext.fetch(request)
+            items = result as! [BucketListItem]
+        }catch{
+            print("Something went wrong")
+        }
+        
+    }
    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
@@ -23,7 +35,7 @@ var items = [ "n","d","d","cs","f"]
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        
+        cell.accessoryType = .detailDisclosureButton
         cell.textLabel?.text = items[indexPath.row]
         
         return cell
@@ -48,7 +60,7 @@ var items = [ "n","d","d","cs","f"]
             
             addItemTableViewController.delegate = self
         }
-        else if segue.identifier == "EditItemSegue"{
+        else if segue.identifier == "DetalisID"{
             let navigationController = segue.destination as! UINavigationController
             let addItemTableViewController = navigationController.topViewController as! AddViewController
             addItemTableViewController.delegate = self
