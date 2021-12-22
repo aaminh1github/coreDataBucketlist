@@ -9,8 +9,9 @@ import Foundation
 import CoreData
 
 protocol AddItemViewControllerDelegate: AnyObject{
-    func itemSaved(by controller: AddViewController, with text: String, at indexPath: NSIndexPath?)
+    func itemSaved(by controller: AddViewController, with text: String, at index: NSIndexPath?)
     func cancelButtonPressed(by controller: AddViewController)
+    
 }
 
     
